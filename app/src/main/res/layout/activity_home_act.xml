@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_act">
+
+    <ViewFlipper
+        android:id="@+id/slider"
+        android:layout_width="415dp"
+        android:layout_height="488dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ViewFlipper>
+    [4:45 p. m., 2/10/2020] Sondy:
+
+    <TableLayout
+        android:layout_width="412dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="346dp"
+            android:layout_height="103dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton14"
+                    android:layout_width="195dp"
+                    android:layout_height="88dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButton13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/perfil_men" />
+
+                <ImageButton
+                    android:id="@+id/imageButton13"
+                    android:layout_width="212dp"
+                    android:layout_height="88dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton14"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bd_men" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Clientes"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButton14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageButton14" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="GestionarInsumos"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.532"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton14"
+                    app:layout_constraintTop_toTopOf="@+id/imageButton13" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="329dp"
+            android:layout_height="94dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton15"
+                    android:layout_width="193dp"
+                    android:layout_height="86dp"
+                    android:onClick="maps"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButton16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/maps_men" />
+
+                <ImageButton
+                    android:id="@+id/imageButton16"
+                    android:layout_width="209dp"
+                    android:layout_height="88dp"
+                    android:onClick="Info"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton15"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/info_men" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="59dp"
+                    android:text="Localizacion"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageButton15"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton15"
+                    app:layout_constraintTop_toTopOf="@+id/imageButton15" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Informacion"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton15"
+                    app:layout_constraintTop_toTopOf="@+id/imageButton16" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
