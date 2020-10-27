@@ -2,6 +2,7 @@ package com.example.main_activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.MediaController;
@@ -16,17 +17,29 @@ public class Info_act extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_act);
 
+        // Aqui llamo el elemento por id
         videoview = (VideoView) findViewById(R.id.vd);
 
-
-        String ruta = "android. resource://" + getPackageName() + "/" + R.raw.video;  // Ruta del video
-
-        Uri uri = Uri.parse(ruta);
-        videoview.setVideoURI(uri);
-
-        // Control de navigacion
-
+        videoview.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.s1)); // ruta del video
+        // control de la navigacion
         MediaController media = new MediaController(this);
         videoview.setMediaController(media);
-    }
-}
+        videoview.start();
+     }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
